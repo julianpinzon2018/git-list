@@ -42,6 +42,7 @@ const RepoItemStyled = styled.div`
     padding-inline: 0.75rem;
     padding-block: 0.25rem;
     border-radius: 2rem;
+    overflow: hidden;
   }
   .details {
     display: flex;
