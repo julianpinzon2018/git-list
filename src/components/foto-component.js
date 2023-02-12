@@ -36,7 +36,7 @@ const FotoComponentStyled = styled.div`
   }
 `;
 
-function FotoComponent({ name, avatar_url, login, newBackButton }) {
+function FotoComponent({ name, avatar_url, login }) {
   return (
     <FotoComponentStyled>
       <img src={avatar_url} className="avatar" alt="" />
