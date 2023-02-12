@@ -52,6 +52,9 @@ const ModalContentStyled = styled.form`
     font: var(--headline2-semi-bold);
     margin: 0;
   }
+  @media screen and (max-width: 780px) {
+    inline-size: 80%;
+  }
 `;
 
 function ModalContent({ setModal }) {
