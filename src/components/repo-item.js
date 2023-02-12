@@ -62,7 +62,7 @@ const RepoItemStyled = styled.div`
     /* font-size: 0.7rem; */
     .topicList {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(80px, auto));
+      grid-template-columns: repeat(auto-fill, minmax(100px, auto));
       font-size: 0.8rem;
     }
   }
