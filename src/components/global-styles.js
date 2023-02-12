@@ -7,7 +7,7 @@ const GlobalStylesStyled = createGlobalStyle`
 --black: #141414; 
 --grey: #8b949e; 
 --bg: #0d1117; 
---button: #22262c; 
+--buttonBG: #22262c; 
 --grey-1: #c5ced7;
 --grey-2: #3f4954;
 --pink: #cc68a0; 
@@ -25,11 +25,11 @@ const GlobalStylesStyled = createGlobalStyle`
 --caption-regular: 400 0.75rem/1.125rem Inter; 
 --caption-medium: 500 0.75rem/1.125rem Inter; 
 }
+
 body {
-  border: 10px solid green;
-  background-color: var(--bg);
   color: var(--grey);
   font: var(--body1-regular);
+  margin: 0;
 }
 `;
 
