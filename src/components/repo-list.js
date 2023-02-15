@@ -22,10 +22,12 @@ function RepoList({ repoList, search, language }) {
 
   if (search !== "") {
     list = list.filter((item) => {
-      return item.name.toUpperCase().search(search.toUpperCase()) >= 0;
+      return item.name.search(search.toLowerCase()) >= 0;
     });
-    return <Noexiste />;
   }
+  // else {
+  //   return <Noexiste />;
+  // }
 
   return (
     <RepoListStyled>
