@@ -18,16 +18,16 @@ function RepoList({ repoList, search, language }) {
         return repo.language.toLowerCase() === language;
       }
     });
+  } else {
+    <Noexiste />;
   }
-
-  if (search !== "") {
-    list = list.filter((item) => {
+  search !== "" ? (
+    (list = list.filter((item) => {
       return item.name.search(search.toLowerCase()) >= 0;
-    });
-  }
-  // else {
-  //   return <Noexiste />;
-  // }
+    }))
+  ) : (
+    <Noexiste />
+  );
 
   return (
     <RepoListStyled>
